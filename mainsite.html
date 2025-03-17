@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Emnesite</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+
+</head>
+
+</body>
+
+<header>
+    <div class="header-content">
+        <div class="nav-left">
+            <a href="banerne.html" class="nav-link">Banerne</a>
+        </div>
+
+        <div class="logo-container">
+            <a href="mainsite.html" class="logo-link">
+                <img src="./images/streebaner.svg" alt="Logo" class="logo">
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <a href="index.html" class="header-button">Forside</a>
+        </div>
+    </div>
+    <div class="header-line"></div>
+</header>
+
+
+<body class="mainsite">
+
+    <section class="grid-container">
+        <div class = "grid-text">
+            <h1>Find de bedste streetbasket baner i København</h1>
+
+            <h3>Den eneste hjemmeside, du skal bruge
+            for at finde de bedste streetbasket baner 
+            i københavn,</h3> 
+            
+            <h3>Bare søg på dit postnummer over kortet, eller 
+            tryk på banerne oppe i venstre hjørne af hjemmesiden for at se de mange baner som 
+            København gemmer på.</h3>
+
+        
+        </div>
+
+        <div class = "grid-map">
+            <div class="map-textbox">
+                <input type="text" id="search-input" placeholder="Indtast postnummer..." />
+                <button id="search-button">Søg</button>
+            </div>
+            <div id="map"></div>
+
+
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+
+
+
+
+</html>

@@ -3,24 +3,78 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.frontpage {
     background-image: url('../images/Bagrundsbillede.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
+header {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo-link{
+        width: 150px;
+        height: auto;
+        display: block;
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    color: #24541B;
+}
+
+.header-button {
+    padding: 10px 20px;
+    color: #24541B;
+}
+
+
+
+.nav-link {
+    color: #24541B;
+    
+}
+
+.header-line {
+    width: 100%;
+    height: 4px;
+    background-color: #24541B;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 
 .button {
     padding: 20px 40px;
     background-color: #f8f8f8;
-    border: 2px solid #3d6023;
+    border: 2px solid #24541B;
     border-radius: 50px;
+    text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: #3d6023;
+    color: #24541B;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -33,3 +87,149 @@ html, body {
     background-color: #e0e0e0;
     transform: scale(1.05);
 }
+
+a {
+    text-decoration: none;
+}
+
+
+
+.mainsite {
+    background-color: #EBD2A4;
+}
+
+
+.banerne {
+   background-color: #EBD2A4;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+
+.grid-text {
+    font-size: 17px;
+    color: #24541B;
+    margin: 10px;    
+}
+
+
+.grid-map {
+
+    display: flex;
+    color: #24541B;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+
+.map-textbox {
+    width: 70%;
+    padding: 1px 10px;
+    background-color:#EBD2A4;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #20491e;
+    margin-bottom: 15px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.map-textbox input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #EBD2A4;
+    border: 5px solid #20491e;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.map-textbox button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #20491e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.map-textbox button:hover {
+    background-color: #3d6023;
+}
+
+
+
+
+
+
+.map-image {
+    width  : 100%;
+    max-width: 500 px;
+    border-radius: 30px;
+}
+
+#map {
+    width: 450%;
+    max-width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+
+/* Grid for banerne.html */
+.baner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 70px; /* Afstand mellem billeder */
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* Styling af grid-items */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #20491e;
+    font-weight: bold;
+}
+
+.grid-item img {
+    width: 100%; 
+    max-width: 400px; /* Reducerer størrelsen lidt */
+    height: auto;
+    border-radius: 10px; /* Lavere afrunding */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
+.grid-item h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+main {
+    padding-top: 80px; }
+    
